@@ -1,0 +1,44 @@
+{
+  "author": {
+    "email": "yuqi@wisedu.com",
+    "name": "elvisqi",
+    "url": "http://wisedu.github.io"
+  },
+  "bugs": {
+    "url": "https://github.com/wisedu/gitbook-plugin-baidu-wis/issues"
+  },
+  "dependencies": {},
+  "description": "Baidu Analytics tracking for your gitbook.",
+  "devDependencies": {},
+  "directories": {},
+  "engines": {
+        "gitbook": ">1.x.x"
+  },
+  "gitbook": {
+    "properties": {
+      "token": {
+        "description": "Token for Baidu analytics",
+        "required": true,
+        "type": "string"
+      }
+    }
+  },
+  "homepage": "https://github.com/wisedu/gitbook-plugin-baidu-wis",
+  "keywords": [
+    "gitbook",
+    "plugin",
+    "baidu",
+    "analytics"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "email": "yuqi@wisedu.com",
+      "name": "elvisqi"
+    }
+  ],
+  "name": "gitbook-plugin-baidu-wis",
+  "readme": "ERROR: No README data found!",
+  "version": "0.1.0"
+}
