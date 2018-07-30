@@ -23,6 +23,7 @@
       },
       "url": {
         "description": "百度统计js地址",
+        "default":"https://hm.baidu.com/hm.js",
         "required": false,
         "type": "string"
       }
@@ -45,5 +46,5 @@
   ],
   "name": "gitbook-plugin-baidu-tongji",
   "readme": "百度统计，使用示例请参考：https://github.com/huisman6/gitbook-plugin-baidu-tongji",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
