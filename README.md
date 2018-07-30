@@ -1,23 +1,25 @@
-# Baidu Analytics tracking for GitBook
+# 百度统计
 
-[![Dependency Status](https://david-dm.org/poppinlp/gitbook-plugin-baidu.svg)](https://david-dm.org/poppinlp/gitbook-plugin-baidu)
-[![devDependency Status](https://david-dm.org/poppinlp/gitbook-plugin-baidu/dev-status.svg)](https://david-dm.org/poppinlp/gitbook-plugin-baidu#info=devDependencies)
+代码copy自仓库：https://github.com/wisedu/gitbook-plugin-baidu-wis
 
-A gitbook plugin to add Baidu Analytics for your book
+主要调整了以下两点：
+
+1. 百度统计的URL修改为https（目前是http，会导致307重定向）
+2. 增加额外配置：url，可指定百度统计的url.
 
 ### Install Plugin
 
 Install with this command:
 
 ```shell
-npm install gitbook-plugin-baidu
+npm install gitbook-plugin-baidu-tongji
 ```
 
 or add this to your `book.json` config:
 
 ```json
 {
-    "plugin": ["baidu"]
+    "plugin": ["baidu-tongji"]
 }
 ```
 
@@ -29,23 +31,36 @@ gitbook install ./
 
 ### Use Plugin
 
-First you should have a Baidu Analytics token, looks like `c12134efe8099063bacebecb25df3b7d`.
+1. 登录百度统计官网，注册或者登录，新增待监控的网站后，点击 获取代码，获取以下代码：
 
-Then add your token to `book.json` config:
+``` javascript
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?6acsaqd94975e4sdckqwba3062835";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+```
+
+
+2. 将步骤一获取到的代码的token(即"6acsaqd94975e4sdckqwba3062835")添加到配置文件
+
 
 ```json
 {
-    "plugin": ["baidu"],
+    "plugin": ["baidu-tongji"],
     "pluginsConfig": {
-        "baidu": {
-            "token": "YOUR TOKEN"
+        "baidu-tongji": {
+            "token": "6acsaqd94975e4sdckqwba3062835"
         }
     }
 }
 ```
 
-Finally build your book with gitbook again and you'll get what you want.
-
-### History
-
-- Ver 0.0.2 init

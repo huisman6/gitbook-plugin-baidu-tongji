@@ -1,14 +1,14 @@
 {
   "author": {
-    "email": "yuqi@wisedu.com",
-    "name": "elvisqi",
-    "url": "http://wisedu.github.io"
+    "email": "unknown",
+    "name": "huisman6",
+    "url": "https://github.com/huisman6/gitbook-plugin-baidu-tongji"
   },
   "bugs": {
-    "url": "https://github.com/wisedu/gitbook-plugin-baidu-wis/issues"
+    "url": "https://github.com/huisman6/gitbook-plugin-baidu-tongji/issues"
   },
   "dependencies": {},
-  "description": "Baidu Analytics tracking for your gitbook.",
+  "description": "百度统计新版代码",
   "devDependencies": {},
   "directories": {},
   "engines": {
@@ -17,13 +17,18 @@
   "gitbook": {
     "properties": {
       "token": {
-        "description": "Token for Baidu analytics",
+        "description": "用户在百度统计中新增网站后生成的token",
         "required": true,
+        "type": "string"
+      },
+      "url": {
+        "description": "百度统计js地址",
+        "required": false,
         "type": "string"
       }
     }
   },
-  "homepage": "https://github.com/wisedu/gitbook-plugin-baidu-wis",
+  "homepage": "https://github.com/huisman6/gitbook-plugin-baidu-tongji",
   "keywords": [
     "gitbook",
     "plugin",
@@ -34,11 +39,11 @@
   "main": "index.js",
   "maintainers": [
     {
-      "email": "yuqi@wisedu.com",
-      "name": "elvisqi"
+      "email": "unknow",
+      "name": "huisman6"
     }
   ],
-  "name": "gitbook-plugin-baidu-wis",
-  "readme": "ERROR: No README data found!",
+  "name": "gitbook-plugin-baidu-tongji",
+  "readme": "百度统计，使用示例请参考：https://github.com/huisman6/gitbook-plugin-baidu-tongji",
   "version": "1.0.0"
 }
